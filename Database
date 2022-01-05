@@ -1,0 +1,30 @@
+select * from UserDetails;
+select * from Loan;
+select * from Bank_Acc;
+
+
+USER_DETAIL
+1.UserDetails
+User_id int Identity(1,1) Primary key,
+FirstName varchar(30),
+LastName varchar(30),
+Phone bigint,
+Email varchar(20),
+RegDate Date,
+DOB Date,
+Imag Varbinary(Max),
+Aadhar bigint,
+PenCard varchar(20));
+
+2.Loan
+LoanId int Identity(1,1) Primary key,
+Loan_Amt_Applied INT,
+Loan_Status varchar(20),
+Loan_Sanctioned int);
+
+3.Bank_Acc
+Payment_id int,
+Acct_No bigint,
+Bank_Name varchar(20),
+IFSC_Code varchar(20),
+Branch varchar(20);
