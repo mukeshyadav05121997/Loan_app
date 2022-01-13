@@ -1,6 +1,7 @@
 select * from UserDetails;
 select * from Loan;
 select * from Bank_Acc;
+select * from PaymentEmis;
 
 
 USER_DETAIL
@@ -28,3 +29,10 @@ Acct_No bigint,
 Bank_Name varchar(20),
 IFSC_Code varchar(20),
 Branch varchar(20);
+
+4.PaymentEmis
+Paymentemi_id
+Amt
+StartEMI
+LastEMI
+NextEMI
